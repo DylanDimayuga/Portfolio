@@ -9,6 +9,7 @@
 
 body {
     background-color: #E9F1F7;
+    margin: 0;
 }
 
 h1 {
@@ -16,14 +17,14 @@ h1 {
     font-weight: 900;
     font-family: "sans serif";
     padding: 10px;
-    color: #E9F1F7;
+    color: #66fcf1;
     align-items: center;
 }
 
 nav {
     display: flex;
     flex-wrap: wrap;
-    background-color: #2274A5;
+    background-color: #0b0C10;
     padding: 30px 0px;
     justify-content: space-between;
 }
@@ -42,31 +43,61 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #E9F1F7;
+    color: #66fcf1;
     text-decoration: none;
 }
 
 h2 {
-    font-size: 30px;
+    font-size: 50px;
     color: #131B23;
+    font-weight: 900;
 }
 
 .section-about-me::before {
+    border-bottom: 2px solid #1f2833;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 1px;
+    left: 0;
+    width:10%;
+}
+
+#babyme {
+    width: auto;
+    height: auto;
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 100%;
 }
 
 .section {
-    border: 3px solid #E7DFC6;
-    padding: 6px 16px 10px 16px;
+    border: 100px solid #1f2833;
+    padding: 10px 15px;
+}
+
+.intro {
+    /* line-height: 10px; */
+    padding: 20px 0px;
+    font-size: 17px;
+    /* padding-left: 5px; */
+}
+
+.interests {
+    font-size: 30px;
+    font-weight: 900;
 }
 
 footer {
     position: relative;
     padding: 15px;
     text-align: center;
+    background-color: #0b0C10;
+    color:#66fcf1;
 }
 
-/* 2274A5
-E7DFC6
-E9F1F7
-131B23
-816C61 */
+/* 0b0C10 - Black
+1f2833 - Dark Grey
+c5c6c7 - Light Grey
+66fcf1 - Light Blue
+45a29e -Darker blue */
