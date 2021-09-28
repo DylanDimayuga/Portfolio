@@ -12,13 +12,10 @@ body {
     margin: 0;
 }
 
-h1 {
-    font-size: 30px;
-    font-weight: 900;
-    font-family: "sans serif";
-    padding: 10px;
-    color: #66fcf1;
-    align-items: center;
+header {
+    position: sticky;
+    top: 0;
+    z-index: 2;
 }
 
 nav {
@@ -27,6 +24,15 @@ nav {
     background-color: #0b0C10;
     padding: 30px 0px;
     justify-content: space-between;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: 900;
+    font-family: "sans serif";
+    padding: 10px;
+    color: #66fcf1;
+    align-items: center;
 }
 
 nav ul {
@@ -47,46 +53,75 @@ nav ul li a {
     text-decoration: none;
 }
 
+.section {
+    border: 100px solid #1f2833;
+    padding: 55px 15px;
+}
+
+#me {
+    width: auto;
+    height: auto;
+    max-width: 170px;
+    max-height: 170px;
+    border-radius: 100%;
+    /* position: relative;
+    left: 500px */
+}
+
 h2 {
     font-size: 50px;
     color: #131B23;
     font-weight: 900;
+    margin: 10px;
+    position: relative;
+    z-index: 1;
 }
 
 .section-about-me::before {
-    border-bottom: 2px solid #1f2833;
+    border-bottom: 4px solid #1f2833;
     content: '';
     position: absolute;
-    bottom: 0;
+    bottom: -2px;
     height: 1px;
     left: 0;
-    width:10%;
-}
-
-#babyme {
-    width: auto;
-    height: auto;
-    max-width: 300px;
-    max-height: 300px;
-    border-radius: 100%;
-}
-
-.section {
-    border: 100px solid #1f2833;
-    padding: 10px 15px;
+    width: 13%;
 }
 
 .intro {
-    /* line-height: 10px; */
-    padding: 20px 0px;
+    line-height: 25px;
+    padding: 10px 0px;
     font-size: 17px;
+    margin: 10px;
     /* padding-left: 5px; */
 }
 
 .interests {
     font-size: 30px;
     font-weight: 900;
+    position: relative;
+    z-index: 1;
+    padding: 18px 0px 10px 0px;
+    margin: 10px;
 }
+
+.interests::before {
+    border-bottom: 3px solid #1f2833;
+    content: '';
+    position: absolute;
+    bottom: 9px;
+    height: 1px;
+    left: 0;
+    width: 6.7%;
+}
+
+section ul li{
+    padding: 5px;
+    list-style-type: circle;
+    list-style-position: inside;
+    margin-left: 10px;
+}
+
+
 
 footer {
     position: relative;
