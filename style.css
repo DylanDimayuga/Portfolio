@@ -121,7 +121,65 @@ section ul li{
     margin-left: 10px;
 }
 
+.project {
+    grid-column: 1/-1;
+    padding: 0px 0px 66px 0px;
+    position: relative;
+    left: 10px;
+}
 
+.project:before {
+    border-bottom: 4px solid #1f2833;
+    content: '';
+    position: absolute;
+    bottom: 57px;
+    height: 1px;
+    left: 1px;
+    width: 10.5%;
+}
+
+#my-work {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(334px,1fr));
+}
+
+section section h3 {
+    font-size: 20px;
+    font-weight: 200;
+}
+
+
+.contactinfo {
+    position: relative;
+    top: -30px;
+}
+
+.contactinfo:before {
+    border-bottom: 4px solid #1f2833;
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    height: 1px;
+    left: 4px;
+    width: 16.1%;
+}
+
+.phonenum {
+    font-size: 20px;
+    position: relative;
+    left: 16px;
+    top: -108px;
+}
+
+section a {
+    position: relative;
+    bottom: -30px;
+    left: -110px;
+}
+
+a:hover:active {
+    color: yellow;
+}
 
 footer {
     position: relative;
