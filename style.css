@@ -164,6 +164,11 @@ section section p {
     left: 0px;
 }
 
+.picture {
+    width: 200px;
+    height: 200px;
+}
+
 .contactinfo {
     position: relative;
     top: -30px;
